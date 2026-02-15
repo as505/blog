@@ -8,4 +8,8 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<p>
+	test
+</p>
+
 {@render children()}
