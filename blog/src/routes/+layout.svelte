@@ -33,5 +33,11 @@
 
 	:global(body) {
 		color: var(--col-content);
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+
+	nav{
+		position: absolute;
 	}
 </style>
