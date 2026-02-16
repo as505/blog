@@ -16,17 +16,15 @@
 
 
 <style>
+
 .layout{
-    grid-template-columns: 20vw 40vw 20vw;
-    grid-template-rows: repeat(2, 100vh);
+    grid-template-columns: 10vw auto 10vw;
+    grid-template-rows: repeat(3, 100vh);
     width:90vw;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-    margin-bottom: 0px;
     display: grid;
-    
 }
 
 .frit-Contain{

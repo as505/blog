@@ -9,8 +9,10 @@
 </svelte:head>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="/blog">TestBlog</a>
+	<div class="navBox">
+		<a href="/">Home</a>
+		<a href="/blog">Blog</a>
+	</div>
 </nav>
 
 {@render children()}
@@ -33,11 +35,22 @@
 
 	:global(body) {
 		color: var(--col-content);
-		margin-bottom: 0px;
-		margin-top: 0px;
+		margin: 0px;
 	}
 
 	nav{
 		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		z-index: 100000;
+	}
+
+	.navBox{
+		--navBarRightPadding: 5rem;
+		padding: 1rem;
+		padding-right: var(--navBarRightPadding);
+		background-color: var(--col-bg);
+		border-radius: 1rem;
+		z-index: 10000;
 	}
 </style>
