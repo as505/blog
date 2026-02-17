@@ -1,6 +1,5 @@
 <div class="frontPage">
-    <div class="triangle">
-    </div>
+    <div class="triangle"></div>
     <h1>
         WIP
     </h1>
@@ -8,10 +7,12 @@
 
 <style>
     .frontPage{
+        background-color: var(--col-bg);
         display: grid;
         margin: 0;
         margin-left: 0rem;
         width: 100vw;
+        height: 100vh;
         color: var(--col-header);
     }
 
@@ -26,7 +27,8 @@
     }
 
     h1{
-        margin-top: 2rem;
+        position: absolute;
+        top: 20rem;
         place-self: center;
     }
 </style> 

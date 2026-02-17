@@ -23,6 +23,8 @@
 		--col-highlight: rgb(226, 232, 206);
 		--col-content: rgb(172, 191, 164);
 		--col-header: rgb(255, 127, 17);
+		--blog-margin: 15rem;
+		--blog-text-width: 60vw;
 		background-color: var(--col-bg);
 	}
 	:global(h1) {
@@ -46,7 +48,7 @@
 	}
 
 	.navBox{
-		--navBarRightPadding: 5rem;
+		--navBarRightPadding: 4rem;
 		padding: 1rem;
 		padding-right: var(--navBarRightPadding);
 		background-color: var(--col-bg);

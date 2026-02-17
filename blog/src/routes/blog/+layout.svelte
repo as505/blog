@@ -5,7 +5,8 @@
         <div class="frit" id="frit2"></div>
         <div class="frit" id="frit3"></div>
     </div>
-    <article class="text"></article>
+    <article class="text-background">
+    </article>
     <div class="frit-Contain">
         <div class="frit" id="frit3-r"></div>
         <div class="frit" id="frit2-r"></div>
@@ -14,11 +15,22 @@
     </div>
 </div>
 
+<script lang="ts">
+	import favicon from '$lib/assets/favicon.svg';
+
+	let { children } = $props();
+    
+</script>
+{@render children()}
 
 <style>
 
+:root{
+    background-color: var(--col-content);
+}
+
 .layout{
-    grid-template-columns: 10vw auto 10vw;
+    grid-template-columns: var(--blog-margin) auto var(--blog-margin);
     grid-template-rows: repeat(3, 100vh);
     width:90vw;
     height: 100vh;
@@ -37,7 +49,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)70%, rgba(0, 0, 0, 0)70%);
+    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)70%, rgba(0, 0, 0, 0)70%);
     width: 4rem;
     background-repeat: repeat-y;
 }
@@ -57,28 +69,28 @@
 #frit2{
     right: 0.6rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)40%, rgba(0, 0, 0, 0)40%);
+    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)40%, rgba(0, 0, 0, 0)40%);
     background-position: 0.4rem 10rem;
 }
 
 #frit2-r{
     left: 0.6rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)40%, rgba(0, 0, 0, 0)40%);
+    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)40%, rgba(0, 0, 0, 0)40%);
     background-position: -0.4rem 10rem;
 }
 
 #frit3{
     right: 2.3rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)20%, rgba(0, 0, 0, 0)20%);
+    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)20%, rgba(0, 0, 0, 0)20%);
     background-position: 0.4rem 0rem;
 }
 
 #frit3-r{
     left: 2.3rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)20%, rgba(0, 0, 0, 0)20%);
+    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)20%, rgba(0, 0, 0, 0)20%);
     background-position: -0.4rem 0rem;
 }
 
@@ -86,7 +98,7 @@
     right: -2rem;
     width: 2rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)20%, rgba(0, 0, 0, 0)20%);
+    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)20%, rgba(0, 0, 0, 0)20%);
     background-position: -1.0rem 0rem;
 }
 
@@ -95,12 +107,12 @@
     left: -2rem;
     width: 2rem;
     background-size: 4rem 4rem;
-    background-image:  radial-gradient(circle, var(--col-bg), var(--col-bg)20%, rgba(0, 0, 0, 0)20%);
+    background-image:  radial-gradient(circle, var(--col-content), var(--col-content)20%, rgba(0, 0, 0, 0)20%);
     background-position: -1.0rem 0rem;
 }
 
-.text{
-    background-color: var(--col-content);
+.text-background{
+    background-color: var(--col-bg);
 }
 
 </style>
