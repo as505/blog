@@ -24,7 +24,7 @@
 		--col-content: rgb(172, 191, 164);
 		--col-header: rgb(255, 127, 17);
 		--blog-margin: 15rem;
-		--blog-text-width: 60vw;
+		--blog-text-width: 60rem;
 		background-color: var(--col-bg);
 	}
 	:global(h1) {
