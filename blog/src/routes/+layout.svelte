@@ -23,7 +23,7 @@
 		--col-highlight: rgb(226, 232, 206);
 		--col-content: rgb(172, 191, 164);
 		--col-header: rgb(255, 127, 17);
-		--blog-margin: 15rem;
+		--blog-margin: 20rem;
 		--blog-text-width: 60rem;
 		background-color: var(--col-bg);
 	}
