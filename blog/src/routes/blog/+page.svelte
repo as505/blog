@@ -71,9 +71,8 @@ p{
 .layout{
     background-color: var(--col-content);
     grid-template-columns: var(--blog-margin) auto var(--blog-margin);
-    grid-template-rows: repeat(3, auto);
-    width:100vw;
-    height: auto;
+    width:99vw;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -81,9 +80,15 @@ p{
 
 
 article{
+    height: auto;
     width: 80%;
     margin: auto;
     margin-top: 6rem;
+    margin-bottom: 0rem;
+}
+
+:global(body){
+    margin-bottom: 0rem;
 }
 
 

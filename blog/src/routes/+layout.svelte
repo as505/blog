@@ -25,7 +25,7 @@
 		--col-header: rgb(255, 127, 17);
 		--blog-margin: 20rem;
 		--blog-text-width: 60rem;
-		background-color: var(--col-bg);
+		background-color: var(--col-content);
 	}
 	:global(h1) {
 		color: var(--col-header);
@@ -37,7 +37,7 @@
 
 	:global(body) {
 		color: var(--col-content);
-		margin: 0px;
+		margin: 0rem;
 	}
 
 	nav{
